@@ -1,12 +1,15 @@
 ﻿#pragma once
 
-namespace ABelyaeva {
-	void exit();
-	void study();
+#include "menu.hpp"
 
-	void study_summ();
-	void study_substract();
-	void study_multiply();
-	void study_devide();
-	void study_go_back();
+namespace ABelyaeva {
+	const MenuItem* show_menu(const MenuItem* current);
+
+	const MenuItem* exit(const MenuItem* current);
+
+	const MenuItem* study_summ(const MenuItem* current);
+	const MenuItem* study_substract(const MenuItem* current);
+	const MenuItem* study_multiply(const MenuItem* current);
+	const MenuItem* study_devide(const MenuItem* current);
+	const MenuItem* study_go_back(const MenuItem* current);
 }
